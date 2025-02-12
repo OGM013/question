@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://i.imgur.com/FSXqwZO.jpg') no-repeat center center/cover;
+            color: #ff0000;
+        }
+        #no {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Do you love him?</h2>
+        <button onclick="nextPage()">Yes</button>
+        <button id="no">No</button>
+    </div>
+
+    <script>
+        document.getElementById("no").addEventListener("mouseover", function() {
+            this.style.top = Math.random() * window.innerHeight + "px";
+            this.style.left = Math.random() * window.innerWidth + "px";
+        });
+
+        function nextPage() {
+            window.location.href = "valentine.html";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

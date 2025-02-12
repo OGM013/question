@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date of Birth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://i.imgur.com/Oj3N8PS.jpg') no-repeat center center/cover;
+            color: #800080;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What’s his date of birth?</h2>
+        <input type="text" id="dob" placeholder="DD/MM/YYYY">
+        <button onclick="validate()">Next</button>
+        <p id="message" style="color: red;"></p>
+    </div>
+
+    <script>
+        function validate() {
+            let dob = document.getElementById("dob").value.trim();
+            if (dob === "13/01/2004") {
+                window.location.href = "favorite-color.html";
+            } else {
+                document.getElementById("message").innerText = "WORST GIRLFRIEND EVER";
+            }
+        }
+    </script>
+</body>
+</html>
+

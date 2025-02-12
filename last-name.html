@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://i.imgur.com/yTxg1GZ.jpg') no-repeat center center/cover;
+            color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What’s your boyfriend’s last name?</h2>
+        <input type="text" id="lastName" placeholder="Last Name">
+        <button onclick="validate()">Next</button>
+        <p id="message" style="color: red;"></p>
+    </div>
+
+    <script>
+        function validate() {
+            let lastName = document.getElementById("lastName").value.trim();
+            if (lastName.toLowerCase() === "Bamidele") {
+                window.location.href = "dob.html";
+            } else {
+                document.getElementById("message").innerText = "WORST GIRLFRIEND EVER";
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Color</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://i.imgur.com/8NR1qBk.jpg') no-repeat center center/cover;
+            color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What’s his favorite color?</h2>
+        <input type="text" id="color" placeholder="Favorite Color">
+        <button onclick="validate()">Next</button>
+        <p id="message" style="color: red;"></p>
+    </div>
+
+    <script>
+        function validate() {
+            let color = document.getElementById("color").value.trim().toLowerCase();
+            if (color === "blue") {
+                window.location.href = "love-question.html";
+            } else {
+                document.getElementById("message").innerText = "WORST GIRLFRIEND EVER";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+

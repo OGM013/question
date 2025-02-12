@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://i.imgur.com/UvX7zTq.jpg') no-repeat center center/cover;
+            color: #ff0000;
+        }
+        #no {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Every moment with you is a gift, every laugh a treasure, and every kiss a dream come true. You're the melody that fills my heart with joy, and i want to spend forever making memories with you. </h2>
+        <h3>Will you be my Valentine?</h3>
+        <button id="yes" onclick="loveNotification()">Yes</button>
+        <button id="no">No</button>
+    </div>
+
+    <script>
+        document.getElementById("no").addEventListener("mouseover", function() {
+            this.style.top = Math.random() * window.innerHeight + "px";
+            this.style.left = Math.random() * window.innerWidth + "px";
+        });
+
+        function loveNotification() {
+            alert("❤️ Love Notification: She said YES! ❤️");
+        }
+    </script>
+</body>
+</html>
+
+
