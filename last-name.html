@@ -8,8 +8,20 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background: url('https://i.imgur.com/yTxg1GZ.jpg') no-repeat center center/cover;
+            background: url('images/love-background.jpg') no-repeat center center/cover;
             color: #ff4500;
+        }
+        .container {
+            margin-top: 50px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input, button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
         }
     </style>
 </head>
@@ -23,9 +35,9 @@
 
     <script>
         function validate() {
-            let lastName = document.getElementById("lastName").value.trim();
-            if (lastName.toLowerCase() === "bamidele") {
-                window.location.href = "dob.html";
+            let lastName = document.getElementById("lastName").value.trim().toLowerCase();
+            if (lastName === "bamidele") {
+                window.location.href = "dob.html";  // Correctly move to the next page
             } else {
                 document.getElementById("message").innerText = "WORST GIRLFRIEND EVER";
             }
@@ -34,3 +46,5 @@
 </body>
 </html>
 
+
+        
